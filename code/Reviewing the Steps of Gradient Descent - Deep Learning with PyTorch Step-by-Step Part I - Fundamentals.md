@@ -105,6 +105,12 @@ A derivative tells you how much a given quantity changes when you slightly vary 
 
 Using the equations above, we will now compute the gradients with respect to the `b` and `w` coefficients.
 
+```{python}
+b_grad = 2 * error.mean()
+w_grad = 2 * (x_train * error).mean()
+print(b_grad, w_grad)
+```
+
 Enter to Rename, ⇧Enter to Preview
 
 Step 3 - computing the gradient
